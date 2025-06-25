@@ -1,4 +1,6 @@
-theme = "gruvbox_dark_hard"
+#theme
+#theme = "gruvbox_dark_hard"
+theme = "autumn_night"
 
 [editor]
 line-number = "relative"
@@ -7,7 +9,15 @@ auto-pairs = true
 mouse = true
 cursorline = true
 true-color= true
-bufferline = "always"
+clipboard-provider = "termcode"
+
+[editor.gutters.line-numbers]
+min-width = 4
+
+[editor.cursor-shape]
+insert="block"
+normal="block"
+select="block"
 
 [editor.statusline]
 left = ["mode", "spinner"]
