@@ -1,5 +1,4 @@
-#theme
-#theme = "gruvbox_dark_hard"
+#My helixrc 
 theme = "autumn_night"
 
 [editor]
@@ -10,6 +9,9 @@ mouse = true
 cursorline = true
 true-color= true
 clipboard-provider = "termcode"
+
+[editor.gutters]
+layout = ["diff", "diagnostics", "line-numbers", "spacer"]
 
 [editor.gutters.line-numbers]
 min-width = 4
