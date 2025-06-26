@@ -1,4 +1,5 @@
 #My helixrc 
+# 
 theme = "autumn_night"
 
 [editor]
@@ -29,3 +30,6 @@ separator = "│"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
+
+[keys.insert.j]
+k = "normal_mode"
