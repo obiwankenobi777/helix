@@ -1,6 +1,7 @@
 #My helixrc
 # 
-theme = "autumn_night"
+#theme = "autumn_night"
+theme = "curzon"
 
 [editor]
 line-number = "relative"
