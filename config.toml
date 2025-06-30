@@ -1,7 +1,8 @@
 #My helixrc
 # 
 #theme = "autumn_night"
-theme = "curzon"
+#theme = "curzon"
+theme = "ayu_evolve"
 
 [editor]
 line-number = "relative"
@@ -34,7 +35,7 @@ mode.select = "SELECT"
 
 
 [keys.insert]
-j = { k = "normal_mode" }
+#j = { k = "normal_mode" }
 
 [keys.normal]
 "C-j" = ":pipe tr 'a-z' 'A-Z'"
