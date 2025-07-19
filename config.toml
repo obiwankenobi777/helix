@@ -1,8 +1,9 @@
 #My helixrc
-# 
-#theme = "autumn_night"
+ 
+theme = "gruber-darker"
 #theme = "curzon"
-theme = "ayu_evolve"
+#theme = "ayu_evolve"
+#theme = "ao"
 
 [editor]
 line-number = "relative"
@@ -10,8 +11,10 @@ auto-save = true
 auto-pairs = true
 mouse = true
 cursorline = true
-true-color= true
+true-color = true
 clipboard-provider = "termcode"
+bufferline = "always"
+scrolloff = 0
 
 [editor.gutters]
 layout = ["diff", "diagnostics", "line-numbers", "spacer"]
@@ -32,7 +35,6 @@ separator = "│"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
-
 
 [keys.insert]
 #j = { k = "normal_mode" }
