@@ -26,3 +26,8 @@ language-servers = ["rust-analyzer"]
 
 [language-server.rust-analyzer]
 command = "rust-analyzer"
+
+[language-server.rust-analyzer.config]
+checkOnSave = { command = "check" }
+cargo = { features = ["all"] }
+diagnostics = { enable = true }
