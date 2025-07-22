@@ -16,3 +16,13 @@ language-servers = ["deno-lsp"]
 command = "deno"
 args = ["lsp"]
 config.deno.enable = true
+
+[[language]]
+name = "rust"
+roots = ["Cargo.toml"]
+file-types = ["rs"]
+auto-format = true
+language-servers = ["rust-analyzer"]
+
+[language-server.rust-analyzer]
+command = "rust-analyzer"
