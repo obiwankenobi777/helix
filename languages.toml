@@ -20,6 +20,7 @@ config.deno.enable = true
 [[language]]
 name = "rust"
 roots = ["Cargo.toml"]
+#roots = []
 file-types = ["rs"]
 auto-format = true
 language-servers = ["rust-analyzer"]

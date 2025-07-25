@@ -1,5 +1,6 @@
 #My helixrc
  
+#theme = "gruvbox_dark_hard"
 theme = "curzon"
 #theme = "gruber-darker"
 #theme = "ayu_evolve"
