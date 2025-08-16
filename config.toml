@@ -1,10 +1,14 @@
 #My helixrc
  
-#theme = "gruvbox_dark_hard"
-theme = "curzon"
-#theme = "gruber-darker"
-#theme = "ayu_evolve"
-#theme = "ao"
+# theme = "dracula_at_night"
+theme = "dark-synthwave"
+# theme = "autumn_night"
+# theme = "heisenberg"
+# theme = "ataraxia"
+# theme = "curzon"
+# theme = "gruber-darker"
+# theme = "gruvbox_dark_hard"
+# theme = "ayu_evolve"
 
 [editor]
 line-number = "relative"
@@ -21,7 +25,7 @@ scrolloff = 0
 layout = ["diff", "diagnostics", "line-numbers", "spacer"]
 
 [editor.gutters.line-numbers]
-min-width = 4
+min-width = 3
 
 [editor.cursor-shape]
 insert="block"

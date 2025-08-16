@@ -8,14 +8,18 @@ language-servers = ["deno-lsp"]
 [[language]]
 name = "javascript"
 roots = ["deno.json", "deno.jsonc", "package.json"]
-file-types = ["js", "jsx"]
+file-types = ["js", "jsx", "mjs"]
 auto-format = true
-language-servers = ["deno-lsp"]
+language-servers = ["deno-lsp", "typescript"]
 
 [language-server.deno-lsp]
 command = "deno"
 args = ["lsp"]
 config.deno.enable = true
+
+[language-server.typescript]
+command = "typescript-language-server"
+args = ["--stdio"]
 
 [[language]]
 name = "rust"
