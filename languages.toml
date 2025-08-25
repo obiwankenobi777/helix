@@ -1,3 +1,17 @@
+# ~/.config/helix/languages.toml
+
+[[language]]
+name = "c"
+language-servers = [ "clangd" ]
+
+[[language]]
+name = "cpp"
+language-servers = [ "clangd" ]
+
+[language-server.clangd]
+# name = "clangd"
+command = "clangd"
+
 [[language]]
 name = "typescript"
 roots = ["deno.json", "deno.jsonc", "package.json"]
