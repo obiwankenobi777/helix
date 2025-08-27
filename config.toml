@@ -1,11 +1,11 @@
 #My helixrc
  
-# theme = "dracula_at_night"
+# theme = "heisenberg"
 # theme = "dark-synthwave"
 # theme = "autumn_night"
 # theme = "ataraxia"
-# theme = "curzon"
-theme = "gruber-darker"
+theme = "curzon"
+# theme = "gruber-darker"
 # theme = "gruvbox_dark_hard"
 # theme = "ayu_evolve"
 
