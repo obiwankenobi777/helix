@@ -1,5 +1,6 @@
 # ~/.config/helix/languages.toml
 
+#C, C++
 [[language]]
 name = "c"
 language-servers = [ "clangd" ]
@@ -9,9 +10,26 @@ name = "cpp"
 language-servers = [ "clangd" ]
 
 [language-server.clangd]
-# name = "clangd"
 command = "clangd"
 
+#RUST
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
+[language-server.rust-analyzer.config]
+checkOnSave = { command = "check" }
+cargo = { features = ["all"] }
+diagnostics = { enable = true }
+
+#LUA
+[language-server.lua-language-server]
+command = "/usr/bin/lua-language-server"
+
+[[language]]
+name = "lua"
+language-servers = ["lua-language-server"]
+
+#JAVASCRIPT
 [[language]]
 name = "typescript"
 roots = ["deno.json", "deno.jsonc", "package.json"]
@@ -43,10 +61,3 @@ file-types = ["rs"]
 auto-format = true
 language-servers = ["rust-analyzer"]
 
-[language-server.rust-analyzer]
-command = "rust-analyzer"
-
-[language-server.rust-analyzer.config]
-checkOnSave = { command = "check" }
-cargo = { features = ["all"] }
-diagnostics = { enable = true }

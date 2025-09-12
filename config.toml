@@ -1,10 +1,7 @@
 #My helixrc
  
-# theme = "heisenberg"
-# theme = "dark-synthwave"
-# theme = "autumn_night"
-# theme = "ataraxia"
-theme = "curzon"
+theme = "dark-synthwave"
+# theme = "curzon"
 # theme = "gruber-darker"
 # theme = "gruvbox_dark_hard"
 # theme = "ayu_evolve"
@@ -41,7 +38,7 @@ mode.insert = "INSERT"
 mode.select = "SELECT"
 
 [keys.insert]
-#j = { k = "normal_mode" }
+j = { k = "normal_mode" }
 
 [keys.normal]
 "C-j" = ":pipe tr 'a-z' 'A-Z'"
