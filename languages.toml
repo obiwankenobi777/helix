@@ -13,6 +13,13 @@ language-servers = [ "clangd" ]
 command = "clangd"
 
 #RUST
+[[language]]
+name = "rust"
+roots = ["Cargo.toml"]
+file-types = ["rs"]
+auto-format = true
+language-servers = ["rust-analyzer"]
+
 [language-server.rust-analyzer]
 command = "rust-analyzer"
 
@@ -53,11 +60,4 @@ config.deno.enable = true
 command = "typescript-language-server"
 args = ["--stdio"]
 
-[[language]]
-name = "rust"
-roots = ["Cargo.toml"]
-#roots = []
-file-types = ["rs"]
-auto-format = true
-language-servers = ["rust-analyzer"]
 
