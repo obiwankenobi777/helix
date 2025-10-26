@@ -12,6 +12,14 @@ language-servers = [ "clangd" ]
 [language-server.clangd]
 command = "clangd"
 
+#LUA
+[language-server.lua-language-server]
+command = "/usr/bin/lua-language-server"
+
+[[language]]
+name = "lua"
+language-servers = ["lua-language-server"]
+
 #RUST
 [[language]]
 name = "rust"
@@ -28,13 +36,6 @@ checkOnSave = { command = "check" }
 cargo = { features = ["all"] }
 diagnostics = { enable = true }
 
-#LUA
-[language-server.lua-language-server]
-command = "/usr/bin/lua-language-server"
-
-[[language]]
-name = "lua"
-language-servers = ["lua-language-server"]
 
 #JAVASCRIPT
 [[language]]

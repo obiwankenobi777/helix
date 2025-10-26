@@ -1,10 +1,11 @@
 #My helixrc
  
+# theme = "doom_acario_dark"
 # theme = "ayu_evolve"
 # theme = "ataraxia"
-# theme = "dark-synthwave"
+theme = "dark-synthwave"
 # theme = "curzon"
-theme = "gruber-darker"
+# theme = "gruber-darker"
 # theme = "gruvbox_dark_hard"
 
 [editor]
