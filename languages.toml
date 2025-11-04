@@ -12,6 +12,30 @@ language-servers = [ "clangd" ]
 [language-server.clangd]
 command = "clangd"
 
+#PYTHON
+[[language]]
+name = "python"
+auto-format = true
+language-servers = ["pylsp"]
+
+[language-server.pylsp]
+command = "pylsp"
+args = []
+
+[language-server.pylsp.config.pylsp.plugins]
+# Plugins opcionais:
+jedi_completion = { enabled = true }
+jedi_hover = { enabled = true }
+jedi_references = { enabled = true }
+jedi_signature_help = { enabled = true }
+jedi_symbols = { enabled = true }
+mccabe = { enabled = true }
+pycodestyle = { enabled = true, ignore = ["E501"], maxLineLength = 88 }
+pydocstyle = { enabled = false }
+pyflakes = { enabled = true }
+yapf = { enabled = false }
+
+
 #LUA
 [language-server.lua-language-server]
 command = "/usr/bin/lua-language-server"
